@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Logged in as ${client.user.tag} Success!`);
 });
 
 client.on('message', msg => {
@@ -35,4 +35,4 @@ client.on('message', msg => {
   }
 });
 
-client.login('NTQ3NzE1MTQ0MzgyMjgzNzg2.D1ACPw.AtuP08lbfQEiBpo9gkdKRyjGILs');
+bot.login(process.env.TOKEN);
